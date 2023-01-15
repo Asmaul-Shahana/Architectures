@@ -1,0 +1,500 @@
+:root {
+    --primary-color: #131313;
+    --secondary-color: #727272;
+    --orange: #FF900E;
+}
+
+/* ---------- Common Styles ---------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.title {
+    color: var(--primary-color);
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.description {
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
+
+
+/* ---------- header styles ---------- */
+.header {
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 50px 228px 45px 228px;
+}
+
+/* ----- navbar ----- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 102px;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+nav li {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    list-style-type: none;
+}
+
+nav>ul a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+/* ----- Banner ----- */
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 45px;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    color: var(--primary-color);
+    padding-bottom: 26px;
+}
+
+.banner-desc {
+    text-align: center;
+}
+
+.explore-btn {
+    background-color: var(--orange);
+    color: white;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.explore-btn:hover {
+    background-color: #f58301;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+/* ---------- Main Section Styles ---------- */
+
+main,
+footer {
+    margin: 0 240px 216px 240px;
+}
+
+/* ---------- Quick List styles ----------- */
+
+.quick-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 73px;
+    padding: 85px 61px 130px 61px;
+}
+
+.quicklist-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+}
+
+.quicklist-title {
+    margin-bottom: 24px;
+}
+
+.quicklist-title-gray {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.quicklist-title-orange {
+    color: var(--orange);
+}
+
+/* ---------- Features section styles ---------- */
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 146px;
+    align-items: center;
+    margin-bottom: 168px;
+}
+
+.features-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.features-title {
+    border-left: 5px solid var(--orange);
+    padding-left: 21px;
+    margin-bottom: 24px;
+}
+
+.feature {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.feature-name {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--primary-color);
+    padding-bottom: 10px;
+
+}
+
+.feature-info-desc {
+    margin-bottom: 10px;
+}
+
+.feature-desc {
+    margin-bottom: 0px;
+}
+
+.features-img img {
+    width: 100%;
+}
+
+.feature-btn-container {
+    position: relative;
+}
+
+.feature-btn {
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    position: absolute;
+    left: -100px;
+    bottom: -80px;
+    padding: 45px 42px;
+}
+
+.feature-btn:hover {
+    background-color: #f58301;
+}
+
+#btnpart-10-year {
+    font-weight: 700;
+    font-size: 65px;
+}
+
+/* ---------- Some Facts styles ---------- */
+.facts-container {
+    margin-bottom: 180px;
+}
+
+.fact-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 180px;
+    width: 40%;
+    margin-bottom: 0;
+}
+
+.fact-title {
+    margin-bottom: 24px;
+}
+
+.fact-desc {
+    margin-bottom: 100px;
+}
+
+.fact-box-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 125px;
+    justify-items: center;
+}
+
+.fact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--orange);
+    border-radius: 8px;
+    padding: 45px 33px;
+    width: 242px;
+    transition: all 0.75s ease-out 0.30s;
+}
+
+.fact-box:hover {
+    background-color: rgba(255, 143, 14, 0.336);
+    transform: rotateY(360deg) scale(1.10);
+}
+
+.fact-no {
+    font-weight: 600;
+    font-size: 45px;
+    color: #424242;
+    text-align: center;
+}
+
+.fact-type {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+/* ----- Our Sponsors styles ----- */
+.sponsors-container {
+    margin-bottom: 130px;
+}
+
+.sponsors-info {
+    max-width: 40%;
+    margin: auto;
+}
+
+.sponsor-title {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.sponsor-desc {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sponsors-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sponsor-logo {
+    filter: grayscale(1);
+}
+
+/* Our Project styles */
+.projects-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.project-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.box {
+    background-color: rgba(255, 143, 14, 0.336);
+}
+
+.box img {
+    width: 100%;
+    height: 80%;
+}
+
+.caption {
+    color: var(--secondary-color);
+    padding: 5px 10px;
+    text-align: center;
+}
+
+/* ---------- Footer Styles ---------- */
+
+.copyright {
+    color: var(--secondary-color);
+    font-size: 20px;
+    text-align: center;
+    padding: 38px 0px;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+}
+
+/* ---------- media queries ---------- */
+
+/* Laptop Devices */
+@media only screen and (max-width: 1440px) {
+    .header {
+        padding: 25px 128px;
+    }
+
+    main,
+    footer {
+        margin: 150px;
+    }
+
+    .fact-box-container {
+        grid-column-gap: 80px;
+    }
+
+    .fact-box {
+        max-width: 195px;
+        padding: 30px 25px;
+    }
+
+    .project-box {
+        gap: 20px;
+    }
+}
+
+/* ----- Mobile Devices ----- */
+@media only screen and (max-width: 576px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        padding: 20px;
+    }
+
+    main,
+    footer {
+        margin: 20px 15px 25px 15px;
+    }
+
+    /* navbar responsive */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+
+    .nav-title {
+        font-size: 25px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding-left: 0;
+    }
+
+    /* banner responsive */
+    .banner-content {
+        margin-bottom: 30px;
+    }
+
+    .banner-title {
+        font-size: 50px;
+        padding-bottom: 10px;
+    }
+
+    .banner-subtitle {
+        margin-bottom: 18px;
+    }
+
+    /* quick list responsive */
+
+    .quick-list-container {
+        flex-direction: column;
+        gap: 35px;
+        padding: 10px 15px;
+        margin-bottom: 35px;
+    }
+
+    .quicklist-img-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 24px;
+    }
+
+    .quicklist-content {
+        text-align: center;
+    }
+
+    /* Features responsive */
+    .features-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 35px;
+    }
+
+    .features-content {
+        margin: 0 20px;
+    }
+
+
+    .feature-btn {
+        position: relative;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Facts section responsive */
+    .facts-container {
+        margin-bottom: 50px;
+    }
+
+    .fact-info {
+        width: 100%;
+    }
+
+    .fact-desc {
+        margin-bottom: 40px;
+    }
+
+    .fact-box-container {
+        grid-template-columns: repeat(1, 0.5fr);
+        grid-row-gap: 20px;
+        justify-content: center;
+    }
+
+    .fact-box {
+        padding: 15px 0;
+        width: 250px;
+    }
+
+    /* sponsors responsive */
+    .sponsors-info {
+        max-width: 100%;
+    }
+
+    .sponsors-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    /* Projects styles */
+    .project-box {
+        flex-direction: column;
+    }
+
+    /* Footer responsive */
+    .copyright {
+        padding: 8px 10px;
+    }
+}
